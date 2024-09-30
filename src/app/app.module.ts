@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProvaComponent } from './prova/prova.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [AppComponent, ProvaComponent],
@@ -17,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
