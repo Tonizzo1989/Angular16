@@ -1,8 +1,32 @@
-<!-- <button mat-raised-button color="primary" (click)="onClick(this)">
+<button mat-raised-button color="primary" (click)="onClick($event)">
   Primary
-</button> -->
+</button>
 
-<mat-form-field class="example-full-width" appearance="fill">
-  <mat-label>Favorite food</mat-label>
-  <input matInput placeholder="Ex. Pizza" (input)="onInput($event)" />
+<!-- <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Favourite food</mat-label>
+  <input matInput placeholder="Ex. Pizza" [(ngModel)]="title" />
 </mat-form-field>
+<p>{{ title }}</p> -->
+
+<!-- <div *ngFor="let list of people; index as i">
+  <p>{{ i }}{{ list.name }} {{ list.surname }}</p>
+</div>
+ -->
+
+<!-- <div [ngSwitch]="number">
+  <p *ngSwitchCase="1">uno</p>
+  <p *ngSwitchCase="2">due</p>
+  <p *ngSwitchCase="3">tre</p>
+  <p *ngSwitchCase="4">quattro</p>
+  <p *ngSwitchCase="5">cinque</p>
+  <p *ngSwitchCaseDefault="">default</p>
+</div> -->
+
+<div [ngSwitch]="string">
+  <p *ngSwitchCase="'pippo'">uno</p>
+  <p *ngSwitchCase="'pluto'">due</p>
+  <p *ngSwitchCase="'paperino'">tre</p>
+  <p *ngSwitchCase="'minnie'">quattro</p>
+  <p *ngSwitchCase="'topolino'">cinque</p>
+  <p *ngSwitchDefault>default</p>
+</div>
