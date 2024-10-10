@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-prova',
@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./prova.component.css'],
 })
 export class ProvaComponent implements OnInit {
-  isDisabled = true;
+  @Output() sendDataEvent = new EventEmitter<string>();
 
-  constructor() {
-    console.log('costruttore');
-  }
+  name = 'Pippo';
 
-  ngOnInit(): void {
-    console.log('ngOnInit');
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  sendData() {
+    this.sendDataEvent.emit(this.name);
   }
 }

@@ -11,9 +11,10 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
-  declarations: [AppComponent, ProvaComponent],
+  declarations: [AppComponent, ProvaComponent, HighlightDirective],
   imports: [
     MatSliderModule,
     BrowserModule,
