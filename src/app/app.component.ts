@@ -1,3 +1,4 @@
+import { interval, Observable } from 'rxjs';
 import { ProvaService } from './services/prova.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,5 +10,5 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent {
   title = 'ng16';
 
-  
+  ngOnInit(): void {}
 }
